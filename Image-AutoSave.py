@@ -12,9 +12,9 @@ urllib.request.install_opener(opener)
 slideURL = []
 
 def main():
-    print("============================")
-    print("= Article Image Downloader =")
-    print("============================\n")
+    print("----------------------------")
+    print("- Article Image Downloader -")
+    print("----------------------------\n")
     print("Enter the URL of the article:")
     articleURL = input()
     time.sleep(0.5)
