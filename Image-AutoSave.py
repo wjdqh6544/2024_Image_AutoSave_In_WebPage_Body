@@ -4,6 +4,7 @@ import urllib.request
 import re
 import time
 import datetime
+import os
 
 opener = urllib.request.build_opener() # Request Header 추가 (Bot 차단 방지)
 opener.addheaders = [('User-agent', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64)')]
@@ -46,7 +47,8 @@ def main():
     print(" - Download Failed: " + str(failed))
     print(" - Time taken to download: " + str(datetime.timedelta(seconds=sec)).split(".")[0])
     time.sleep(1)
-    print("Completed!\n")
+    print("\nCompleted!\n")
+    os.system("pause")
 
 
 def WCCFTech(articleURL): # for WCCFTech / article URL 을 받아서, content 에 포함된 이미지 개수와 원본 URL return
